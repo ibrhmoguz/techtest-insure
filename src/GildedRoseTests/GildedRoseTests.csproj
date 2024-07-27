@@ -22,4 +22,11 @@
         <ProjectReference Include="..\GildedRose\GildedRose.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Golden Master.txt">
+        <ParentFile>ApprovalTest</ParentFile>
+        <DependentUpon>ApprovalTest.cs</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>
