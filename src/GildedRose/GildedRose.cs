@@ -23,38 +23,17 @@ namespace GildedRoseKata
                 {
                     backstagePasses.UpdateQuality();
                 }
+                else if (Items[i] is Sulfuras sulfuras)
+                {
+                    sulfuras.UpdateQuality();
+                }
+                else if (Items[i] is Conjured conjured)
+                {
+                    conjured.UpdateQuality();
+                }
                 else
                 {
-                    if (Items[i].Quality > 0)
-                    {
-                        if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            if (Items[i].Name == "Conjured Mana Cake")
-                            {
-                                Items[i].Quality -= 2;
-                            }
-                            else
-                            {
-                                Items[i].Quality = Items[i].Quality - 1;
-                            }
-                        }
-                    }
-
-                    if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
-                    {
-                        Items[i].SellIn = Items[i].SellIn - 1;
-                    }
-
-                    if (Items[i].SellIn < 0)
-                    {
-                        if (Items[i].Quality > 0)
-                        {
-                            if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
-                            {
-                                Items[i].Quality = Items[i].Quality - 1;
-                            }
-                        }
-                    }
+                    Items[i].UpdateQuality();
                 }
             }
         }
