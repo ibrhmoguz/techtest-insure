@@ -7,7 +7,7 @@
             Name = "Sulfuras, Hand of Ragnaros";
         }
         
-        public void UpdateQuality()
+        public override void UpdateQuality()
         {
             // legendary item: never has to be sold or decreases in Quality
         }

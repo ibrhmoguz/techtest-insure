@@ -6,7 +6,7 @@
         public int SellIn { get; set; }
         public int Quality { get; set; }
 
-        public void UpdateQuality()
+        public virtual void UpdateQuality()
         {
             if (Quality > 0)
             {

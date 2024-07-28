@@ -7,7 +7,7 @@
             Name = "Backstage passes to a TAFKAL80ETC concert";
         }
 
-        public void UpdateQuality()
+        public override void UpdateQuality()
         {
             if (Quality < 50)
             {

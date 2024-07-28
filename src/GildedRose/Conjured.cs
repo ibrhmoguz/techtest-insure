@@ -7,7 +7,7 @@
             Name = "Conjured Mana Cake";
         }
         
-        public void UpdateQuality()
+        public override void UpdateQuality()
         {
             if (Quality > 0)
             {

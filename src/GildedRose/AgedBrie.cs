@@ -7,7 +7,7 @@
             Name = "Aged Brie";
         }
         
-        public void UpdateQuality()
+        public override void UpdateQuality()
         {
             if (Quality < 50)
             {
